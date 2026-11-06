@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'telas/tela_produtos.dart';
 import 'telas/CarrinhoScreen.dart';
-import 'Utils.dart';
+import 'shared/Utils.dart';
 import 'helper.dart';
 import 'globals.dart';
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/produto.dart';
 import '../helper.dart';
 import '../globals.dart';
-import '../Utils.dart';
+import '../shared/Utils.dart';
 import 'CarrinhoScreen.dart';
 
 class TelaProdutos extends StatefulWidget {
@@ -241,8 +241,8 @@ class _TelaProdutosState extends State<TelaProdutos> {
                                           setState(() {});
                                           ScaffoldMessenger.of(context)
                                               .showSnackBar(SnackBar(
-                                            content: Text(
-                                                p.nome! + " adicionado!"),
+                                            content:
+                                                Text(p.nome! + " adicionado!"),
                                             backgroundColor: Color(0xFF03DAC6),
                                             duration:
                                                 Duration(milliseconds: 1500),
@@ -376,8 +376,8 @@ class _TelaProdutosState extends State<TelaProdutos> {
                                               setState(() {});
                                               ScaffoldMessenger.of(context)
                                                   .showSnackBar(SnackBar(
-                                                content: Text(p.nome! +
-                                                    " adicionado!"),
+                                                content: Text(
+                                                    p.nome! + " adicionado!"),
                                                 backgroundColor:
                                                     Color(0xFF03DAC6),
                                                 duration: Duration(

@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'models/produto.dart';
 import 'globals.dart';
-import 'Utils.dart';
+import 'shared/Utils.dart';
 
 // classe que faz as coisas
 class Helper {

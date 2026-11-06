@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../globals.dart';
 import '../helper.dart';
-import '../Utils.dart';
+import '../shared/Utils.dart';
 import '../models/produto.dart';
 
 class CarrinhoScreen extends StatefulWidget {
@@ -96,7 +96,15 @@ class _CarrinhoScreenState extends State<CarrinhoScreen> {
                                 Text("Estado: "),
                                 DropdownButton<String>(
                                   value: uf,
-                                  items: ["SC", "PR", "RS", "SP", "RJ", "MG", "BA"]
+                                  items: [
+                                    "SC",
+                                    "PR",
+                                    "RS",
+                                    "SP",
+                                    "RJ",
+                                    "MG",
+                                    "BA"
+                                  ]
                                       .map((e) => DropdownMenuItem(
                                           value: e, child: Text(e)))
                                       .toList(),
